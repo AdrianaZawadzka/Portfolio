@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+<div class="gallery">
+    <div class="row">
+        <div class="column">
+            <img src="images/image1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <img src="images/rysunek1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <div class="scroll-left">
+                <p>ILLUSTRATION</p>
+                <img src="images/image2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <img src="images/rysunek2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            <img src="images/image3.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            <img src="images/rysunek3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            <img src="images/image-4.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <img src="images/rysunek4.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            <div class="scroll-left">
+                <p>PHOTOGRAPHY</p>
+                <img src="images/image5.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </div>
+            <img src="images/rysunek5.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            <img src="images/image6.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            <img src="images/rysunek6.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="images/rysunek7.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+            <img src="images/image7.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+            <img src="images/rysunek8.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+            <img src="images/image8.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+            <img src="images/rysunek9.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+            <div class="scroll-left">
+                <p>PORTFOLIO</p>
+                <img src="images/image9.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+            </div>
+            <img src="images/rysunek10.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
+            <img src="images/image10.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+            <img src="images/rysunek11.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
+            <img src="images/image11.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+            <img src="images/rysunek12.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+            <img src="images/image12.jpg" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="images/image13.jpg" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+            <img src="images/rysunek13.jpg" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+            <div class="scroll-left">
+                <p>ILLUSTRATION</p>
+                <img src="images/image14.jpg" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+            </div>
+            <img src="images/rysunek14.jpg" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+            <img src="images/image15.jpg" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+            <img src="images/rysunek15.jpg" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+            <img src="images/image16.jpg" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+            <img src="images/rysunek16.jpg" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+            <div class="scroll-left">
+                <p>PHOTOGRAPHY</p>
+                <img src="images/image17.jpg" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+            </div>
+            <img src="images/rysunek17.jpg" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+            <img src="images/image18.jpg" onclick="openModal();currentSlide(35)" class="hover-shadow cursor">
+            <img src="images/rysunek18.jpg" onclick="openModal();currentSlide(36)" class="hover-shadow cursor">
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <img src="images/image1.jpg" >
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek1.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image2.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek2.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image3.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek3.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image-4.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek4.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image5.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek5.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image6.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek6.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek7.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image7.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek8.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image8.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek9.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image9.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek10.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image10.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek11.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image11.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek12.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image12.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image13.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek13.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image14.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek14.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image15.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek15.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image16.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek16.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image17.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek17.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/image18.jpg">
+        </div>
+
+        <div class="mySlides">
+            <img src="images/rysunek18.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+</div>
+<script>
+    function openModal() {
+        document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+</body>
+</html>
